@@ -10,7 +10,7 @@ const ArticlesMainPage = () => {
       setLoading(true);
 
       try {
-        const res = await fetch(`/api/articles/all?search=${searchTerm}`);
+        const res = await fetch(`https://liv-backend-2.onrender.com/api/articles/all?search=${searchTerm}`);
         const data = await res.json();
         setArticles(data);
         if (data.error) {
