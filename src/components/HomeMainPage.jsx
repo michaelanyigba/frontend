@@ -27,7 +27,7 @@ const HomeMainPage = () => {
 
   const getImage = async () => {
     try {
-      await fetch(`/api/post/get-post?search=${searchTerm}`, {
+      await fetch(`https://liv-backend-2.onrender.com/api/post/get-post?search=${searchTerm}`, {
         method: "GET",
       })
         .then((res) => res.json())
