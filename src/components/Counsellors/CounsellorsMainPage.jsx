@@ -12,7 +12,7 @@ const CounsellorsMainPage = () => {
     
       const getCounsellors = async () => {
         try {
-          await fetch(`/api/counsellors/all?search=${searchTerm}`, {
+          await fetch(`https://liv-backend-2.onrender.com/api/counsellors/all?search=${searchTerm}`, {
             method: "GET",
           })
             .then((res) => res.json())
