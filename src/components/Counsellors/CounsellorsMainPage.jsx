@@ -31,7 +31,7 @@ const CounsellorsMainPage = () => {
       <Navbar />
       <div className=" bg-gray-100 py-3 px-3  flex flex-col items-center min-h-screen ">
       <div className=" flex justify-center items-center mt-6 h-9 mb-4">
-        <div className=" flex me-8  items-center justify-center rounded-md ms-2 h-4 ">
+        <div className=" flex me-8  items-center justify-center rounded-md ms-2 h-4  mx-auto">
           <form action="">
           <input
             type="text" 
