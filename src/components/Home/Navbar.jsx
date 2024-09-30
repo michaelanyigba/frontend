@@ -11,6 +11,8 @@ import { FaSearch } from "react-icons/fa"
 import { MdDynamicFeed } from "react-icons/md";
 import { useAuthContext } from "../../context/AuthContext";
 import toast from "react-hot-toast";
+import { IoIosPeople } from "react-icons/io";
+import { IoChatbox } from "react-icons/io5";
 
 
 const Navbar = () => {
@@ -144,6 +146,22 @@ const Navbar = () => {
                     Counsellors
                   </a>
                   <FaRegUser size={25} />
+                </li>
+              </Link>
+              <Link to={"/articles"}>
+                <li className=" p-3 flex border-b border-gray-400 items-center font-serif mb-3 hover:bg-pink-400 rounded-sm hover:text-white justify-between">
+                  <a href="" className=" text-[25px]">
+                    Articles
+                  </a>
+                  <IoIosPeople size={25} />
+                </li>
+              </Link>
+              <Link to={"/chat"}>
+                <li className=" p-3 flex border-b border-gray-400 items-center font-serif mb-3 hover:bg-pink-400 rounded-sm hover:text-white justify-between">
+                  <a href="" className=" text-[25px]">
+                    Chat
+                  </a>
+                  <IoChatbox size={25} />
                 </li>
               </Link>
               <li className=" p-3 flex border-b border-gray-400 items-center font-serif mb-3 hover:bg-pink-400 rounded-sm hover:text-white justify-between">
