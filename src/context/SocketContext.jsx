@@ -16,6 +16,7 @@ export const SocketContextProvider = ({ children }) => {
     useEffect(() => {
         if (authUser) {
             const socket = io("https://liv-backend-2.onrender.com", {
+                withCredentials: true,
                 query: {
                     userId: authUser._id
                 }
